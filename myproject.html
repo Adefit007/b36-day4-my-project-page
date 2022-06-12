@@ -1,0 +1,120 @@
+<html>
+  <head>
+    <title>My Project</title>
+    <!-- Judulna -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="myproject.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav>
+      <!-- Navigasi sisi kiri-->
+      <div class="left-side">
+        <a href="#"><img src="assets/logo.png" alt="" /></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#" class="active">My Project</a></li>
+        </ul>
+      </div>
+      <!-- Navigasi sisi kanan -->
+      <div class="right-side">
+        <a href="contact.html" target="_blank">Contact Me</a>
+      </div>
+    </nav>
+    <div class="project-form">
+      <!-- Form Add My Project -->
+      <form action="">
+        <div>
+          <h1>ADD MY PROJECT</h1>
+        </div>
+        <div>
+          <label for="input-project-name">Project Name</label>
+          <input type="text" id="input-project-name" />
+        </div>
+        <div class="container-flex-date">
+          <div class="container-date-left">
+            <label for="input-start-date">Start Date </label>
+            <input type="date" id="input-start-date" />
+          </div>
+          <div class="container-date-right">
+            <label for="input-end-date">End Date </label>
+            <input type="date" id="input-end-date" />
+          </div>
+        </div>
+        <div>
+          <label for="input-description">Description</label>
+          <textarea id="input-description"></textarea>
+        </div>
+        <div>
+          <label>Technologies </label>
+          <div class="container-tech">
+            <div class="container-tech-left">
+              <input
+                type="checkbox"
+                name="node-js"
+                id="node-js"
+                value="Node Js"
+              />
+              <label for="node-js" class="checkbox-tech">Node Js </label> <br />
+              <input
+                type="checkbox"
+                name="react-js"
+                id="react-js"
+                value="React Js"
+              />
+              <label for="react-js" class="checkbox-tech">React Js </label>
+            </div>
+            <div class="container-date-right">
+              <input
+                type="checkbox"
+                name="next-js"
+                id="next-js"
+                value="Next Js"
+              />
+              <label for="next-js" class="checkbox-tech">Next Js </label> <br />
+              <input
+                type="checkbox"
+                name="typescript-js"
+                id="typeScript-js"
+                value="typescript js"
+              />
+              <label for="typescript-js" class="checkbox-tech"
+                >TypeScript Js
+              </label>
+            </div>
+          </div>
+        </div>
+        <div>
+          <label>Upload Image</label>
+          <div class="upload-image-group">
+            <label for="upload-image"
+              ><p>Attach File</p>
+              <img src="assets/file.png" alt="file"
+            /></label>
+            <input
+              type="file"
+              name="upload-image"
+              id="upload-image"
+              accept="image/*"
+              hidden
+            />
+          </div>
+        </div>
+        <button type="button" onclick="addProjects()">Submit</button>
+      </form>
+    </div>
+    <!-- Post Project -->
+    <div class="post-project">
+      <h1>MY PROJECT</h1>
+      <div class="grid-container" id="contents-projects"></div>
+    </div>
+  </body>
+</html>

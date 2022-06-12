@@ -1,0 +1,494 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(221, 218, 218);
+}
+
+nav {
+  background-color: #f4f3f3;
+  height: 10vh;
+  display: flex;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav .left-side {
+  flex: 50%;
+  padding-left: 90px;
+}
+
+nav .right-side {
+  flex: 50%;
+  padding-right: 90px;
+  justify-content: flex-end;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-left: 40px;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 40px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.active {
+  color: black;
+  font-weight: 700;
+}
+
+nav .right-side a {
+  font-size: 15px;
+  padding: 8px 20px;
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+}
+.container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  padding-left: 40px;
+  background-color: white;
+  width: 1000px;
+  display: flex;
+  border-radius: 7px;
+  box-shadow: 5px 20px 40px rgb(139, 138, 138);
+  align-items: center;
+}
+
+.left {
+  margin-top: 20px;
+  padding-left: 30px;
+  flex: 60%;
+  text-align: justify;
+  align-items: center;
+}
+
+.right {
+  flex: 40%;
+  align-items: center;
+}
+
+.buttons {
+  display: inline;
+  text-decoration: none;
+}
+
+.buttons button {
+  margin-right: 20px;
+}
+
+.left h2 {
+  color: rgb(74, 73, 73);
+}
+
+.left p {
+  color: rgb(74, 73, 73);
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+.button-index {
+  margin-top: 0px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-color: black;
+  padding: 5px;
+  border-radius: 17px;
+  width: 110px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.downloadcv {
+  text-decoration: none;
+  color: black;
+  margin-left: 5px;
+}
+
+.buttons a {
+  text-decoration: none;
+}
+
+.sosmed {
+  margin-top: 10px;
+}
+
+.right div {
+  margin: 40px auto;
+  width: 60%;
+  box-shadow: -7px 19px 42px 3px rgb(202, 201, 201);
+  border-radius: 5px;
+  padding-bottom: 20px;
+}
+
+.right div img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.right div h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(61, 56, 56);
+  text-align: center;
+  margin: 0;
+  padding-bottom: 0px;
+  padding-top: 10px;
+}
+
+.right div p {
+  text-align: center;
+  margin: 0;
+  font-size: 15;
+  color: rgb(71, 71, 69);
+}
+.sosmed p a {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+/* Contact Page*/
+
+.contact-form {
+  height: 100vh;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.contact-form form {
+  width: 400px;
+  margin-top: 10px;
+}
+
+.contact-form div {
+  margin-bottom: 10px;
+}
+
+.contact-form form div h1 {
+  text-align: center;
+  margin: 0;
+}
+
+.contact-form form div label {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contact-form form div input,
+select,
+textarea {
+  width: 100%;
+  background-color: #f4f3f3;
+  border: 1px solid #c4c4c4;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-form form div textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.contact-form form button {
+  background-color: #040505;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  float: right;
+  border: none;
+  font-size: 15px;
+  padding: 7px 30px;
+  border-radius: 17px;
+  cursor: pointer;
+}
+
+input#input-name,
+input#input-email,
+input#input-phone,
+select#choose-subject,
+select#choose-subject option,
+textarea#input-message {
+  font-family: "Poppins", sans-serif;
+}
+
+/* My Project */
+.project-form {
+  height: 105vh;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.project-form form {
+  width: 400px;
+  margin-top: 10px;
+}
+
+.project-form div {
+  margin-bottom: 10px;
+}
+.project-form form div h1 {
+  text-align: center;
+  margin: 0;
+}
+
+.project-form form div label {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.project-form form div input,
+select,
+textarea {
+  width: 100%;
+  background-color: #f4f3f3;
+  border: 1px solid #c4c4c4;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+}
+
+.project-form form div textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.project-form form button {
+  background-color: #040505;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  float: right;
+  border: none;
+  font-size: 15px;
+  padding: 7px 30px;
+  border-radius: 17px;
+  cursor: pointer;
+}
+
+/* input#input-project-name,
+input#input-start-date input#input-end-date input#input-description {
+  font-family: "Poppins", sans-serif;
+} */
+
+.container-flex-date {
+  display: flex;
+}
+
+.container-date-left {
+  flex: 50%;
+  margin-right: 5px;
+}
+
+.container-date-right {
+  flex: 50%;
+  margin-left: 5px;
+}
+
+.container-tech {
+  display: flex;
+}
+
+.container-tech-left {
+  flex: 50%;
+}
+
+input[type="checkbox"] {
+  width: auto !important;
+}
+.container-tech-right {
+  flex: 50%;
+}
+
+label.checkbox-tech {
+  font-size: 13pt !important;
+  font-weight: 600;
+}
+
+form .upload-image-group {
+  /* width: 100%;
+  font-size: 12px;
+  font-weight: 400;
+  /* padding: 10px 0px; */
+  margin-top: 5px;
+  /* margin-bottom: 10px; */
+  /* background: #f4f3f3; */
+  /* border: 1px solid #c4c4c4; */
+  /* border-radius: 8px; */
+}
+
+form .upload-image-group img {
+  float: right;
+}
+
+.upload-image-group label {
+  cursor: pointer;
+  display: flex;
+  font-size: 15px !important;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  background-color: #f4f3f3;
+  border: 1px solid #a6a6a6;
+  border-radius: 8px;
+  color: #696666;
+}
+
+.upload-image-group label p {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+/* Project List */
+
+.post-project {
+  background: #eee;
+  padding: 5vh 5vw;
+}
+
+.post-project h1 {
+  text-align: center;
+}
+.post-project .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 78vw;
+}
+.post-project .grid-item {
+  margin: 1vh 1vw;
+  background: #fdfdfd;
+  margin-top: 10px;
+  width: 26vw;
+  display: flex;
+  flex-direction: column;
+  padding: 2vh 1vw;
+  border-radius: 5px;
+}
+.post-project .grid-item img {
+  width: 100%;
+  height: 33vh;
+  border-radius: 5px;
+}
+
+.post-project .title h2 {
+  margin-bottom: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.post-project .title p {
+  margin-top: 0px;
+  color: #8f8b8b;
+  margin-bottom: 0px;
+}
+
+.post-project .title2 p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tech-icon,
+.tech-icon img,
+.post-project .tech-icon img {
+  font-size: 30px;
+  height: 6vh;
+  width: 25px;
+}
+
+.post-project .tech-icon {
+  display: flex;
+  gap: 20px;
+}
+
+.post-project .button {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.post-project .button button {
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 3px;
+  padding: 6px 0px;
+  margin-top: 20;
+  background-color: #040505;
+  color: white;
+}
+
+/* Detail Project */
+
+.project-detail {
+  padding: 0px 5vw;
+}
+
+.project-detail h1 {
+  text-align: center;
+  padding: 2vh;
+}
+
+.project-detail .container-detail {
+  display: flex;
+  gap: 5vw;
+  margin-bottom: 50px;
+}
+
+.item h3 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.project-detail .container-detail .item {
+  font-size: 20px;
+}
+.head-detail-item {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.head-detail-item p i {
+  font-size: 25px !important;
+}
+
+.head-detail-item p {
+  margin-top: 5px !important;
+  margin-bottom: 5px;
+}
+
+.project-detail .container-detail .item i {
+  font-size: 30px;
+}
+
+.project-detail #detail-image-project {
+  width: 60vw;
+  border-radius: 8px;
+}
+
+.project-description p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}

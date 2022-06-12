@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>Contact</title>
+    <!-- Judulna -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="contact.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav>
+      <!-- Navigasi sisi kiri-->
+      <div class="left-side">
+        <a href="#"><img src="assets/logo.png" alt="" /></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="myproject.html">My Project</a></li>
+        </ul>
+      </div>
+      <!-- Navigasi sisi kanan -->
+      <div class="right-side">
+        <a href="#">Contact Me</a>
+      </div>
+    </nav>
+    <div class="contact-form">
+      <!-- Form Contact -->
+      <form>
+        <div>
+          <h1>GET IN TOUCH</h1>
+        </div>
+        <div>
+          <label for="input-name">Name</label>
+          <input type="text" id="input-name" placeholder="Your name.." />
+        </div>
+        <div>
+          <label for="input-email">Email</label>
+          <input type="email" id="input-email" placeholder="example@...com" />
+        </div>
+        <div>
+          <label for="input-phone">Phone Number</label>
+          <input type="text" id="input-phone" placeholder="0821-1965..." />
+        </div>
+        <div>
+          <label for="choose-subject">Subject</label>
+          <select id="choose-subject">
+            <option hidden="hiden" value="">Select</option>
+            <option value="Talk">Talk</option>
+            <option value="Let's Collaboration">Let's Collaboration</option>
+            <option value="Create Project">Create Project</option>
+          </select>
+        </div>
+        <div>
+          <label for="input-message">Your Message</label>
+          <textarea id="input-message" placeholder="max 100 words"></textarea>
+        </div>
+        <button type="button" onclick="submitForm()">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
